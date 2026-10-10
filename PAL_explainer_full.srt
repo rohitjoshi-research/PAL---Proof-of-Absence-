@@ -1,0 +1,140 @@
+1
+00:00:00,000 --> 00:00:01,400
+Hong Kong, 2026
+
+2
+00:00:01,400 --> 00:00:07,600
+No crash. No dent. Then the claims.
+
+3
+00:00:07,600 --> 00:00:10,800
+Arrests, and not only in Hong Kong
+
+4
+00:00:10,800 --> 00:00:16,200
+Hundreds of cases. Millions claimed.
+
+5
+00:00:16,200 --> 00:00:20,000
+How do you prove a negative?
+
+6
+00:00:22,300 --> 00:00:24,200
+Prove the lane was empty
+
+7
+00:00:24,200 --> 00:00:25,500
+A lane change across a solid line
+
+8
+00:00:25,500 --> 00:00:28,500
+Someone nearby is filming
+
+9
+00:00:28,500 --> 00:00:29,500
+Weeks later…
+
+10
+00:00:29,500 --> 00:00:32,200
+A claim: “I was right behind you”
+
+11
+00:00:32,200 --> 00:00:35,200
+No crash, so nothing was recorded
+
+12
+00:00:35,200 --> 00:00:37,700
+Turn the claim into a zone
+
+13
+00:00:37,700 --> 00:00:39,700
+Record where radar saw free space
+
+14
+00:00:39,700 --> 00:00:41,700
+Seal the record in the car
+
+15
+00:00:41,700 --> 00:00:43,700
+Share only the claimed zone
+
+16
+00:00:43,700 --> 00:00:47,200
+Refute only when a miss is unlikely
+
+17
+00:00:47,200 --> 00:00:49,200
+Same claim, two cars
+
+18
+00:00:49,200 --> 00:00:53,200
+One has nothing. One has evidence.
+
+19
+00:00:53,200 --> 00:00:56,200
+Keep evidence of empty space
+
+20
+00:00:56,200 --> 00:00:59,200
+The car crosses the solid line
+
+21
+00:00:59,200 --> 00:01:00,900
+Radar logs free space, sealed
+
+22
+00:01:00,900 --> 00:01:04,600
+Replay: was the claimed zone empty?
+
+23
+00:01:04,600 --> 00:01:05,900
+Observed empty: claim refuted
+
+24
+00:01:05,900 --> 00:01:08,900
+What if a truck hides the zone?
+
+25
+00:01:08,900 --> 00:01:12,200
+Not seen means no refutation
+
+26
+00:01:12,200 --> 00:01:15,100
+A zone, healthy sensors, a seal
+
+27
+00:01:15,100 --> 00:01:17,900
+Nothing hidden, every verdict graded
+
+28
+00:01:17,900 --> 00:01:21,200
+Each part tested in simulation
+
+29
+00:01:21,200 --> 00:01:25,900
+The insurer checks the sealed record
+
+30
+00:01:25,900 --> 00:01:29,200
+Plain words for the driver
+
+31
+00:01:29,200 --> 00:01:32,200
+If the car can’t see, it says so
+
+32
+00:01:32,200 --> 00:01:35,200
+Real claims are confirmed, too
+
+33
+00:01:35,200 --> 00:01:41,100
+Simulated results
+
+34
+00:01:41,100 --> 00:01:46,200
+Evidence by design, not by video
+
+35
+00:01:46,200 --> 00:01:51,700
+Headlines paraphrased; sources listed
+

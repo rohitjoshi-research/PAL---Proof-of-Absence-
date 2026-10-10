@@ -1,0 +1,10 @@
+{
+  "name": "pal-explainer-video",
+  "private": true,
+  "description": "Fonts for the explainer video page (embedded by build.py)",
+  "license": "MIT",
+  "dependencies": {
+    "@fontsource/inter": "5.3.0",
+    "@fontsource/source-serif-4": "5.3.0"
+  }
+}

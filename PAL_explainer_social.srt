@@ -1,0 +1,128 @@
+1
+00:00:00,000 --> 00:00:01,000
+Hong Kong, 2026
+
+2
+00:00:01,000 --> 00:00:05,300
+No crash. No dent. Then the claims.
+
+3
+00:00:05,300 --> 00:00:07,500
+Arrests, and not only in Hong Kong
+
+4
+00:00:07,500 --> 00:00:11,200
+Hundreds of cases. Millions claimed.
+
+5
+00:00:11,200 --> 00:00:13,800
+How do you prove a negative?
+
+6
+00:00:15,500 --> 00:00:17,100
+Prove the lane was empty
+
+7
+00:00:17,100 --> 00:00:17,700
+A lane change across a solid line
+
+8
+00:00:17,700 --> 00:00:19,500
+Someone nearby is filming
+
+9
+00:00:19,500 --> 00:00:20,000
+Weeks later…
+
+10
+00:00:20,000 --> 00:00:21,500
+A claim: “I was right behind you”
+
+11
+00:00:21,500 --> 00:00:23,200
+No crash, so nothing was recorded
+
+12
+00:00:23,200 --> 00:00:24,600
+Turn the claim into a zone
+
+13
+00:00:24,600 --> 00:00:25,700
+Record where radar saw free space
+
+14
+00:00:25,700 --> 00:00:26,800
+Seal the record in the car
+
+15
+00:00:26,800 --> 00:00:28,000
+Share only the claimed zone
+
+16
+00:00:28,000 --> 00:00:30,000
+Refute only when a miss is unlikely
+
+17
+00:00:30,000 --> 00:00:31,200
+Same claim, two cars
+
+18
+00:00:31,200 --> 00:00:33,400
+One has nothing. One has evidence.
+
+19
+00:00:33,400 --> 00:00:35,000
+Keep evidence of empty space
+
+20
+00:00:35,000 --> 00:00:36,700
+The car crosses the solid line
+
+21
+00:00:36,700 --> 00:00:37,600
+Radar logs free space, sealed
+
+22
+00:00:37,600 --> 00:00:39,700
+Replay: was the claimed zone empty?
+
+23
+00:00:39,700 --> 00:00:40,400
+Observed empty: claim refuted
+
+24
+00:00:40,400 --> 00:00:42,000
+What if a truck hides the zone?
+
+25
+00:00:42,000 --> 00:00:43,900
+Not seen means no refutation
+
+26
+00:00:43,900 --> 00:00:45,500
+A zone, healthy sensors, a seal
+
+27
+00:00:45,500 --> 00:00:47,000
+Nothing hidden, every verdict graded
+
+28
+00:00:47,000 --> 00:00:48,900
+Each part tested in simulation
+
+29
+00:00:48,900 --> 00:00:50,400
+If the car can’t see, it says so
+
+30
+00:00:50,400 --> 00:00:51,900
+Real claims are confirmed, too
+
+31
+00:00:51,900 --> 00:00:55,600
+Simulated results
+
+32
+00:00:55,600 --> 00:00:58,800
+Evidence by design, not by video
+
