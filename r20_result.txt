@@ -1,0 +1,16 @@
+verdict identical after disclosure+verification: 60/60
+rate 2.0 Hz: n=4 disclosure bytes median 16318 max 16472; leaves median 92; proof hashes median 52; headers 61
+rate 10.0 Hz: n=56 disclosure bytes median 48636 max 50538; leaves median 1009; proof hashes median 352; headers 61
+storage per hour, base: 2446560 B
+enriched 20 s event: 152000 B leaves; 154216 B with header and seed
+attack scene: 60
+{
+ "E1 edit hit sector to free": "detected: Merkle root mismatch in block 0",
+ "E2 edit + rebuild + re-sign (attacker key)": "detected: bad signature on block 0",
+ "E3 key compromise, chain re-signed": "detected: chain does not reach the anchor",
+ "W1 withhold a zone sector (valid proof)": "detected: zone sector 8 withheld at t=-1.21",
+ "W2 withhold a whole sample (valid proof)": "detected: ego leaf withheld",
+ "W3 withhold a block": "detected: block 1 overlaps the window but was withheld",
+ "W4 withhold the first block": "detected: chain starts inside the window: an earlier block may have been withheld",
+ "W5 replay a block (duplicate samples)": "detected: duplicate or reordered blocks"
+}

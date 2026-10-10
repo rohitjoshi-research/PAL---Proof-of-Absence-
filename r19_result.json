@@ -1,0 +1,58 @@
+{
+ "121": {
+  "verdict": "INCONCLUSIVE",
+  "kappa": -0.0033333333333333335,
+  "reasons": {
+   "hit outside zone shortens the sector (hit yes)": 26
+  }
+ },
+ "144": {
+  "verdict": "INCONCLUSIVE",
+  "kappa": 0.0016666666666666668,
+  "reasons": {
+   "hit outside zone shortens the sector (hit yes)": 1
+  }
+ },
+ "145": {
+  "verdict": "INCONCLUSIVE",
+  "kappa": 0.0033333333333333335,
+  "reasons": {
+   "hit outside zone shortens the sector (hit yes)": 11
+  }
+ },
+ "158": {
+  "verdict": "INCONCLUSIVE",
+  "kappa": -0.0033333333333333335,
+  "reasons": {
+   "hit outside zone shortens the sector (hit yes)": 1
+  }
+ },
+ "228": {
+  "verdict": "INCONCLUSIVE",
+  "kappa": -0.0033333333333333335,
+  "reasons": {
+   "hit outside zone shortens the sector (hit yes)": 1
+  }
+ },
+ "232": {
+  "verdict": "INCONCLUSIVE",
+  "kappa": 0.0033333333333333335,
+  "reasons": {
+   "hit outside zone shortens the sector (hit yes)": 4
+  }
+ },
+ "244": {
+  "verdict": "INCONCLUSIVE",
+  "kappa": 0.0033333333333333335,
+  "reasons": {
+   "hit outside zone shortens the sector (hit yes)": 5
+  }
+ },
+ "253": {
+  "verdict": "INCONCLUSIVE",
+  "kappa": 0.0016666666666666668,
+  "reasons": {
+   "hit outside zone shortens the sector (hit yes)": 1
+  }
+ }
+}
