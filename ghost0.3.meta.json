@@ -1,0 +1,8 @@
+{
+  "tag": "ghost0.3",
+  "N": 1000,
+  "seed0": 8000000,
+  "override": {
+    "ghost_rate": 0.3
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "tag": "G2-rcs-3-fade8",
+  "N": 10000,
+  "seed0": 11000000,
+  "override": {
+    "rcs_offset_db": -3.0,
+    "fade_persist_sigma_db": 8.0
+  }
+}

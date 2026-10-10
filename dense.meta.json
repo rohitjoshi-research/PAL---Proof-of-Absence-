@@ -1,0 +1,8 @@
+{
+  "tag": "dense",
+  "N": 1000,
+  "seed0": 8000000,
+  "override": {
+    "traffic_max": 12
+  }
+}

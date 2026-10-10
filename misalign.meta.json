@@ -1,0 +1,9 @@
+{
+  "tag": "misalign",
+  "N": 1000,
+  "seed0": 8000000,
+  "override": {
+    "p_misalign": 0.3,
+    "calib_noise_deg": 2.0
+  }
+}

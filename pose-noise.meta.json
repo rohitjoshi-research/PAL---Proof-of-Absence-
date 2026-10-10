@@ -1,0 +1,9 @@
+{
+  "tag": "pose-noise",
+  "N": 1000,
+  "seed0": 8000000,
+  "override": {
+    "pose_noise_l_m": 0.3,
+    "pose_noise_psi_deg": 1.0
+  }
+}

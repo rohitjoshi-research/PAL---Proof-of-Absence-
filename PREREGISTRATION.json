@@ -1,0 +1,50 @@
+{
+  "frozen_utc": "2026-10-08T08:08:28Z",
+  "sha256": {
+    "method.py": "30e7717d6e1a59537d963a5bec9f9fed41b520190601b2033813724017125a41",
+    "sim.py": "12888e2c9b65d0e8bddea8ce740870c0ac62ab850504c475647c84dcbb84c369",
+    "run_v23.py": "6834ccc2b8cd51642673b0f01a65dd37433f90ccebbc3f11cfc223afdf4042b5",
+    "run_phase7.py": "d907893a9d303de44f132d3f3c026b6233a3d605890fe69919afeb40de7e8a27"
+  },
+  "question": "Under sensing conditions never used to design either tier, does the formal tier make fewer wrong refutations than the rule tier?",
+  "conditions": {
+    "G1-rcs-12": {
+      "rcs_offset_db": -12
+    },
+    "G2-rcs-3-fade8": {
+      "rcs_offset_db": -3,
+      "fade_persist_sigma_db": 8
+    },
+    "G3-highspeed": {
+      "ego_speed_range": [
+        27.8,
+        36.1
+      ]
+    },
+    "G4-rain-dense": {
+      "weather_probs": [
+        0,
+        1,
+        0
+      ],
+      "traffic_max": 12
+    }
+  },
+  "seeds": "11,000,000 + i, i < 10,000 per condition",
+  "methods": {
+    "formal": "PAL v2.3 (eps 1e-3, nominal model, worst-case weather)",
+    "rule": "Rule k3 = ObjList-strict-moto (k=3, 1 m gate, liveness, any in-zone detection blocks, no motorcycle refutation)"
+  },
+  "H1": "wrong refutations of genuine claims pooled over G1-G4, formal vs rule, exact two-sided McNemar, alpha 0.05, single test",
+  "H2": "standard tier (both refute): Wilson 95% upper limit of wrong-refutation rate < 0.1%",
+  "secondary": "error-coverage curves (eps 1e-1..1e-6; rule k 2..6, motorcycle rule on/off), matched-coverage comparison, per-condition counts without tests",
+  "reporting": "all results reported regardless of outcome; conservative tier excluded (exploratory)",
+  "pre_freeze_change": "window-end check made tolerant of the clock bound (v2.2 -> v2.3) after the clock0.3 sweep showed coverage 24%; checked on 400 sweep scenes (seeds 8,000,000+i) only",
+  "amendments": [
+    {
+      "utc": "2026-10-08T08:45:51+00:00",
+      "what": "sim.py crashed in G3 (fabricated in-lane claimant drawn from uniform(d_max+8, 60) with d_max up to 72 m). Upper bound now d_max+20 when d_max+8 >= 60; identical draws whenever d_max+8 < 60, i.e. in every earlier condition and in G1, G2, G4. Made before any G3/G4 result existed; G1 and G2 results (already written) were not inspected.",
+      "sim.py_sha256": "7574e9738dfe0324d832407aa3872d94b87d007061866835f43984e58c6ec027"
+    }
+  ]
+}

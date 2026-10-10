@@ -1,0 +1,11 @@
+{
+  "tag": "G3-highspeed",
+  "N": 10000,
+  "seed0": 11000000,
+  "override": {
+    "ego_speed_range": [
+      27.8,
+      36.1
+    ]
+  }
+}

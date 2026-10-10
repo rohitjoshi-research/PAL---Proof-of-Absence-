@@ -1,0 +1,8 @@
+{
+  "tag": "clock0.3",
+  "N": 1000,
+  "seed0": 8000000,
+  "override": {
+    "clock_sigma_s": 0.3
+  }
+}

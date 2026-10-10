@@ -1,0 +1,8 @@
+{
+  "tag": "G1-rcs-12",
+  "N": 10000,
+  "seed0": 11000000,
+  "override": {
+    "rcs_offset_db": -12.0
+  }
+}

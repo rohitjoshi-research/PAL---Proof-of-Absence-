@@ -1,0 +1,8 @@
+{
+  "tag": "boundary-far-edge",
+  "N": 2000,
+  "seed0": 12000000,
+  "override": {
+    "genuine_gap_mode": "far_edge"
+  }
+}

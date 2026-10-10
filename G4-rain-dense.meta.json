@@ -1,0 +1,13 @@
+{
+  "tag": "G4-rain-dense",
+  "N": 10000,
+  "seed0": 11000000,
+  "override": {
+    "weather_probs": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "traffic_max": 12
+  }
+}

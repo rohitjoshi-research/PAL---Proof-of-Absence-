@@ -1,0 +1,8 @@
+{
+  "tag": "fade8",
+  "N": 1000,
+  "seed0": 8000000,
+  "override": {
+    "fade_persist_sigma_db": 8.0
+  }
+}

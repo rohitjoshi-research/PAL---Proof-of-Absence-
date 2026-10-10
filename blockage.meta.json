@@ -1,0 +1,9 @@
+{
+  "tag": "blockage",
+  "N": 1000,
+  "seed0": 8000000,
+  "override": {
+    "p_blocked": 0.3,
+    "blocked_recall": 0.5
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "tag": "confirm-degraded",
+  "N": 10000,
+  "seed0": 10000000,
+  "override": {
+    "rcs_offset_db": -6.0,
+    "fade_persist_sigma_db": 6.0,
+    "p_blocked": 0.3,
+    "blocked_recall": 0.5
+  },
+  "note": "meta written at packaging time from run_v23_bench.py / run_v23.CONFIRM (the bench run did not write a meta file)"
+}

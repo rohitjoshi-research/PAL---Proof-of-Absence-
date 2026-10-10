@@ -1,0 +1,180 @@
+{
+  "n_genuine": 24993,
+  "n_empty": 10551,
+  "H1": {
+    "formal_WR": 5,
+    "rule_WR": 6,
+    "only_formal": 0,
+    "only_rule": 1,
+    "p_exact_mcnemar": 1.0
+  },
+  "H2": {
+    "standard_WR": 5,
+    "wilson95_upper": 0.0004682734113925342,
+    "pass": true
+  },
+  "coverage": {
+    "formal": 0.4380627428679746,
+    "rule": 0.711875651597005,
+    "standard": 0.4139891953369349,
+    "weak_or_better": 0.7359491991280447
+  },
+  "wrong_supports": {
+    "formal": 0,
+    "rule": 0
+  },
+  "per_condition": {
+    "G1-rcs-12": {
+      "n_genuine": 5904,
+      "n_empty": 2939,
+      "formal_WR": 2,
+      "rule_WR": 2,
+      "formal_WR_by_class": {
+        "car": 2,
+        "motorcycle": 0
+      },
+      "rule_WR_by_class": {
+        "car": 2,
+        "motorcycle": 0
+      },
+      "formal_cov": 0.5559714188499489,
+      "rule_cov": 0.7104457298400817,
+      "objlist_best_WR": 52
+    },
+    "G2-rcs-3-fade8": {
+      "n_genuine": 5904,
+      "n_empty": 2939,
+      "formal_WR": 3,
+      "rule_WR": 3,
+      "formal_WR_by_class": {
+        "car": 3,
+        "motorcycle": 0
+      },
+      "rule_WR_by_class": {
+        "car": 3,
+        "motorcycle": 0
+      },
+      "formal_cov": 0.5600544402858115,
+      "rule_cov": 0.7148690030622661,
+      "objlist_best_WR": 22
+    },
+    "G3-highspeed": {
+      "n_genuine": 6549,
+      "n_empty": 2382,
+      "formal_WR": 0,
+      "rule_WR": 1,
+      "formal_WR_by_class": {
+        "car": 0,
+        "motorcycle": 0
+      },
+      "rule_WR_by_class": {
+        "car": 1,
+        "motorcycle": 0
+      },
+      "formal_cov": 0.06926952141057935,
+      "rule_cov": 0.7065491183879093,
+      "objlist_best_WR": 17
+    },
+    "G4-rain-dense": {
+      "n_genuine": 6636,
+      "n_empty": 2291,
+      "formal_WR": 0,
+      "rule_WR": 0,
+      "formal_WR_by_class": {
+        "car": 0,
+        "motorcycle": 0
+      },
+      "rule_WR_by_class": {
+        "car": 0,
+        "motorcycle": 0
+      },
+      "formal_cov": 0.5137494543867307,
+      "rule_cov": 0.7154081187254474,
+      "objlist_best_WR": 3
+    }
+  },
+  "curve_formal": [
+    {
+      "eps": 0.1,
+      "WR": 28,
+      "coverage": 0.5770069187754715
+    },
+    {
+      "eps": 0.03,
+      "WR": 24,
+      "coverage": 0.5685716993649891
+    },
+    {
+      "eps": 0.01,
+      "WR": 11,
+      "coverage": 0.5404227087479859
+    },
+    {
+      "eps": 0.003,
+      "WR": 8,
+      "coverage": 0.48118661738223867
+    },
+    {
+      "eps": 0.001,
+      "WR": 5,
+      "coverage": 0.4380627428679746
+    },
+    {
+      "eps": 0.0003,
+      "WR": 5,
+      "coverage": 0.407733864088712
+    },
+    {
+      "eps": 0.0001,
+      "WR": 5,
+      "coverage": 0.39740308975452565
+    },
+    {
+      "eps": 1e-05,
+      "WR": 1,
+      "coverage": 0.353994882001706
+    },
+    {
+      "eps": 1e-06,
+      "WR": 0,
+      "coverage": 0.24983413894417592
+    }
+  ],
+  "curve_rule": [
+    {
+      "rule": "Rule k2",
+      "WR": 6,
+      "coverage": 0.711875651597005
+    },
+    {
+      "rule": "Rule k3",
+      "WR": 6,
+      "coverage": 0.711875651597005
+    },
+    {
+      "rule": "Rule k4",
+      "WR": 6,
+      "coverage": 0.711875651597005
+    },
+    {
+      "rule": "Rule k5",
+      "WR": 6,
+      "coverage": 0.711875651597005
+    },
+    {
+      "rule": "Rule k6",
+      "WR": 6,
+      "coverage": 0.711875651597005
+    },
+    {
+      "rule": "Rule k3 no-moto-rule",
+      "WR": 30,
+      "coverage": 0.8361292768457966
+    },
+    {
+      "rule": "ObjList-best v2.1",
+      "WR": 94,
+      "coverage": 0.9474931286134016
+    }
+  ]
+}

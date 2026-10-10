@@ -1,0 +1,9 @@
+{
+  "tag": "confirm-rcs-9",
+  "N": 10000,
+  "seed0": 10000000,
+  "override": {
+    "rcs_offset_db": -9.0
+  },
+  "note": "meta written at packaging time from run_v23_bench.py / run_v23.CONFIRM (the bench run did not write a meta file)"
+}
