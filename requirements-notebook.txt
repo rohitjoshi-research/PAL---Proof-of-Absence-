@@ -1,0 +1,5 @@
+# For running the notebook locally (Colab already has these)
+jupyter
+nbconvert
+nbformat
+ipykernel

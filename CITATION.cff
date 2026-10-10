@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite it as below."
+title: "Reproducibility package for a vehicle evidence study (private draft)"
+type: software
+version: "2.3.1"
+license:
+  - MIT
+  - CC-BY-4.0
+authors:
+  - family-names: Joshi
+    given-names: Rohit
+    # orcid: "https://orcid.org/XXXX-XXXX-XXXX-XXXX"   # TO CONFIRM before release
+    # affiliation: "TO CONFIRM"
+keywords:
+  - automotive radar
+  - digital forensics
+  - simulation
+abstract: >-
+  Code, simulated result files and analysis scripts accompanying a manuscript under preparation.
+  All results are simulated. Detailed description withheld until publication.
+# doi: "10.5281/zenodo.XXXXXXX"        # assigned by Zenodo at release
+# date-released: "YYYY-MM-DD"          # set at release

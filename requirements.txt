@@ -1,0 +1,4 @@
+# Tested with Python 3.13.16 (numpy 2.5.3 needs Python >= 3.12; Python 3.11 + numpy 2.4 gave bit-identical results)
+numpy==2.5.3
+cryptography==50.0.1
+matplotlib==3.11.2
