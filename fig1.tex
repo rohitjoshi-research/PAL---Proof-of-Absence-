@@ -1,0 +1,51 @@
+\begin{figure*}[!t]
+\centering
+\begin{tikzpicture}[font=\footnotesize,
+  box/.style={draw=#1, rounded corners=2pt, align=center, minimum height=8mm, inner sep=3pt, fill=#1!12, line width=0.6pt},
+  box/.default=palblue,
+  src/.style={align=right, anchor=east, inner sep=1pt, text=palink2},
+  arr/.style={-{Stealth[length=2mm]}, line width=0.7pt, draw=palink2}]
+\fill[palblue!5] (-1.7,2.75) rectangle (9.55,-3.05);
+\fill[palmuted!9] (11.35,2.75) rectangle (15.8,-3.05);
+% inputs
+\node[src] (pose) at (0.9,1.7) {ego pose, clock};
+\node[src] (lane) at (0.9,0.85) {lane-line events};
+\node[src] (radar) at (0.9,-1.3) {azimuth clearance\\+ detections\\(per radar)};
+% processing
+\node[box=palmuted, text width=2.9cm] (enr) at (3.2,0.85) {\textbf{2} enrichment trigger:\\own solid-line crossing};
+\node[box=palmuted, text width=2.6cm] (att) at (3.2,-1.3) {\textbf{1} sensor attestation\\+ liveness};
+% ledger frame around the free-space record
+\draw[palaqua, fill=palaqua!10, rounded corners=3pt, line width=0.8pt] (5.2,1.3) rectangle (9.4,-0.85);
+\node[box=palaqua, text width=2.8cm] (rec) at (7.3,0.62) {\textbf{3} free-space record\\$e_t(i)=(d_i,h_i,b_i,n_i)$ + ego leaf};
+\node[align=center, font=\scriptsize, text=palink] at (7.3,-0.42) {\textbf{4} ledger: salted leaves, Merkle tree,\\hash chain, Ed25519 (HSM), anchor};
+\node[box=palaqua, dashed, text width=2.8cm] (dlog) at (7.3,-2.1) {\textbf{3$'$} detection log\\(per-sensor detections)};
+% offline column
+\node[box=palmuted, text width=3.3cm] (v1) at (13.55,1.7) {\textbf{6} claim $\rightarrow$ zone $Z$, window $W$};
+\node[box=palmuted, below=2.6mm of v1, text width=3.3cm] (v2) {\textbf{7} integrity + completeness};
+\node[box=palmuted, below=2.6mm of v2, text width=3.3cm] (v3) {\textbf{8} support (persistent returns in $Z^-$)};
+\node[box=palblue, text width=1.42cm, anchor=north west] (v4a) at ([yshift=-2.6mm]v3.south west) {\textbf{9} rule\\tier};
+\node[box=palorange, text width=1.42cm, anchor=north east] (v4b) at ([yshift=-2.6mm]v3.south east) {\textbf{9} formal\\tier};
+\path (v4a.south) -- (v4b.south) coordinate[midway] (m45);
+\node[box=palmuted, text width=3.3cm, anchor=north] (v5) at ([yshift=-2.6mm]m45) {\textbf{10} graded verdict};
+% arrows (in the vehicle)
+\draw[arr] (pose.east) -- (7.3,1.7) -- (rec.north);
+\draw[arr] (lane) -- (enr);
+\draw[arr] (enr.east) -- (rec.west |- enr.east);
+\draw[arr] (radar) -- (att);
+\draw[arr] (att.east) -- (4.95,-1.3) |- ([yshift=-2mm]rec.west);
+\draw[arr] (4.95,-1.3) |- (dlog.west);
+% disclosure and detection log to the verifier
+\draw[arr, draw=palaqua!80!black] (9.4,0.62) -- (10.95,0.62) |- (v2.west);
+\node[font=\scriptsize, text=palink, align=center, anchor=north] at (10.45,0.5) {\textbf{5} disclose\\zone sectors\\in $W$};
+\draw[arr, dashed] (dlog.east) -- (11.1,-2.1) |- (v4a.west);
+\draw[arr, dashed] (11.1,-2.1) |- (v3.west);
+\node[font=\scriptsize, text=palink2, align=left, anchor=north west] at (8.95,-2.2) {not yet sealed};
+\draw[arr] (v1) -- (v2); \draw[arr] (v2) -- (v3);
+\draw[arr] (v3.south -| v4a.north) -- (v4a.north); \draw[arr] (v3.south -| v4b.north) -- (v4b.north);
+\draw[arr] (v4a.south) -- (v4a.south |- v5.north); \draw[arr] (v4b.south) -- (v4b.south |- v5.north);
+\node[font=\footnotesize\bfseries, text=palblue!70!black, anchor=north west] at (-1.6,2.7) {IN THE VEHICLE (continuous, no images)};
+\node[font=\footnotesize\bfseries, text=palink2, anchor=north] at (13.55,2.7) {OFFLINE VERIFIER, AFTER A CLAIM};
+\end{tikzpicture}
+\caption{System architecture. In the vehicle (blue background), attested sensors feed a sector-level free-space record and a detection log (aqua); the record, with an ego leaf per sample, is densified around the vehicle's own solid-line crossing and sealed in a signed ledger (aqua frame). After a claim (gray background), only the zone's sectors in the window are disclosed; the verifier derives the zone and window from the claim, checks integrity and completeness (no withheld or repeated evidence), tests support, and evaluates the rule tier (blue) and the formal tier (orange), which form the graded verdict. The detection log, read by the support test and the rule tier, is not yet integrity-protected (dashed).}
+\label{fig:arch}
+\end{figure*}

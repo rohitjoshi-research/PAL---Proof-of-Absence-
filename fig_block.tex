@@ -1,0 +1,35 @@
+\begin{figure}[!t]
+\centering
+\resizebox{\columnwidth}{!}{%
+\begin{tikzpicture}[font=\footnotesize,
+  stp/.style={draw=palmuted, fill=palmuted!12, rounded corners=2pt, align=center, minimum height=7mm, text width=3.3cm, line width=0.6pt},
+  tier/.style={draw=#1, fill=#1!12, rounded corners=2pt, align=center, minimum height=11mm, text width=2.9cm, line width=0.6pt},
+  out/.style={draw=#1, fill=#1!18, rounded corners=2pt, align=center, minimum height=6.5mm, text width=2.3cm, line width=0.8pt, font=\footnotesize\bfseries},
+  q/.style={font=\footnotesize\itshape, text=palink2},
+  arr/.style={-{Stealth[length=1.6mm]}, line width=0.6pt, draw=palink2}]
+\node[stp] (s1) at (0,0) {integrity: signatures, hash chain to anchor, Merkle roots};
+\node[stp] (s2) at (0,-1.2) {completeness: every sample of $W$ and every sector of the claim's zone};
+\node[stp] (s3) at (0,-2.45) {support (either tier): $\ge k_s$\\samples with returns in $Z^-$};
+\node[out=palcritical] (inv) at (3.55,-0.6) {INVALID};
+\node[out=palgood] (sup) at (3.55,-2.45) {SUPPORTED};
+\node[tier=palblue] (rt) at (-1.7,-4.15) {\textbf{rule tier}\\$Z$ covered, no detection in $Z$, not a motorcycle};
+\node[tier=palorange] (ft) at (1.7,-4.15) {\textbf{formal tier}\\$W$ covered, all samples free (\ref{eq:6}), $\bar P_{\mathrm{miss}}\le\varepsilon$};
+\node[draw=palink2, fill=white, rounded corners=2pt, align=center, minimum height=6mm, text width=2.6cm, line width=0.6pt] (cmb) at (0,-5.6) {how many tiers refute?};
+\node[out=palviolet, text width=2.0cm] (std) at (-2.6,-7.15) {REFUTED (standard)};
+\node[out=palyellow, text width=2.1cm] (wk) at (0,-7.15) {REFUTED (weak),\\tier named};
+\node[out=palmuted, text width=2.2cm] (inc) at (2.6,-7.15) {INCONCLUSIVE};
+\draw[arr] (s1) -- (s2); \draw[arr] (s2) -- (s3);
+\draw[arr] (s1.east) -| node[q, pos=0.25, above]{fail} (inv.north);
+\draw[arr] (s2.east) -| node[q, pos=0.25, below]{missing, repeated} (inv.south);
+\draw[arr] (s3.east) -- node[q, above, pos=0.55]{yes} (sup.west);
+\draw[arr] (s3.south) -- node[q, right, pos=0.45]{no} (0,-3.3) -| (rt.north);
+\draw[arr] (0,-3.3) -| (ft.north);
+\draw[arr] (rt.south) |- (cmb.west);
+\draw[arr] (ft.south) |- (cmb.east);
+\draw[arr] (cmb.south) -- ++(0,-1.5mm) -| node[q, pos=0.75, left]{both} (std.north);
+\draw[arr] (cmb.south) -- node[q, left, pos=0.62]{one} (wk.north);
+\draw[arr] (cmb.south) -- ++(0,-1.5mm) -| node[q, pos=0.75, right]{none} (inc.north);
+\end{tikzpicture}}
+\caption{Verdict logic of the verifier. Integrity or completeness failures make the disclosure invalid; persistent returns in the inset zone support the claim; otherwise the rule and formal tiers are evaluated independently: both refuting gives a standard refutation, one a weak refutation, none an inconclusive verdict. Gray marks steps shared by both tiers, blue the rule tier and orange the formal tier; outcomes are red (invalid), green (supported), violet (standard refutation), yellow (weak refutation) and gray (inconclusive), always with their label.}
+\label{fig:block}
+\end{figure}

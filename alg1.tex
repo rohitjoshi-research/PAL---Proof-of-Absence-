@@ -1,0 +1,30 @@
+\begin{algorithm}[!t]
+\caption{Verification of a Claim}
+\label{alg:verify}
+\footnotesize
+\begin{algorithmic}[1]
+\Require claim $c$; disclosure $D$; anchor $A$; public key $K$; detection log $L$ (not yet sealed); $\varepsilon=10^{-3}$, $k_s=3$, $\gamma=1$~m, $\delta=0.5$~m
+\State $Z, W \gets$ zone and window of $c$, (\ref{eq:2})--(\ref{eq:3})
+\If{a signature (with $K$), the hash chain to $A$ or a Merkle root fails}
+  \State \Return INVALID
+\EndIf
+\If{the chain starts inside $W$; a block overlapping $W$, a logged sample of $W$ or a zone sector is withheld; or a block, leaf or sample is repeated}
+  \State \Return INVALID \Comment{withheld evidence}
+\EndIf
+\For{each sample $t \in W$}
+  \State $Z_t \gets$ zone of $c$ in the disclosed ego pose; $S_t \gets$ sectors meeting $Z_t$
+  \State $H_t \gets$ hits of $S_t$ in $Z_t^-$;\; $\mathrm{free}_t \gets$ all of $S_t$ satisfy (\ref{eq:6})
+\EndFor
+\If{$\bigcup_t H_t$ persists ($k_s,\gamma$) or detections of $L$ in $\bigcup_t Z_t^-$ persist} 
+  \State \Return SUPPORTED
+\EndIf
+\State $R_{\mathrm{rule}} \gets$ $Z$ covered by healthy sensors at all $t$
+\Statex \hspace{\algorithmicindent}\quad $\wedge$ no detection of $L$ in $Z$ $\wedge$ class $\neq$ motorcycle
+\State $R_{\mathrm{formal}} \gets$ samples cover $W$ $\wedge$ $\bigwedge_t \mathrm{free}_t$
+\Statex \hspace{\algorithmicindent}\quad $\wedge\; \bar P_{\mathrm{miss}}(k, W) \le \varepsilon$ \Comment{(\ref{eq:8})}
+\If{$R_{\mathrm{rule}} \wedge R_{\mathrm{formal}}$} \State \Return REFUTED (standard)
+\ElsIf{$R_{\mathrm{rule}} \vee R_{\mathrm{formal}}$} \State \Return REFUTED (weak), naming the tier
+\EndIf
+\State \Return INCONCLUSIVE
+\end{algorithmic}
+\end{algorithm}

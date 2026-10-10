@@ -1,0 +1,59 @@
+% Proof of Absence -- IEEEtran journal source (hand-maintained since round-2 revision). PRIVATE until patent decision.
+\documentclass[journal]{IEEEtran}
+\newif\ifprivate\privatetrue % set \privatefalse for submission
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs,array}
+\usepackage{needspace}
+\usepackage[noadjust]{cite}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{tikz}
+\usetikzlibrary{positioning,arrows.meta}
+\usepackage{xcolor}
+\definecolor{palblue}{HTML}{2A78D6}\definecolor{palorange}{HTML}{EB6834}\definecolor{palaqua}{HTML}{1BAF7A}
+\definecolor{palyellow}{HTML}{EDA100}\definecolor{palviolet}{HTML}{4A3AA7}\definecolor{palink}{HTML}{0B0B0B}\definecolor{palink2}{HTML}{52514E}
+\definecolor{palmuted}{HTML}{898781}\definecolor{palgood}{HTML}{0CA30C}\definecolor{palcritical}{HTML}{D03B3B}
+\usepackage{url}
+\usepackage{xurl}
+\usepackage{newunicodechar}
+\usepackage{flushend}
+\newunicodechar{ε}{\ensuremath{\varepsilon}}
+\newunicodechar{δ}{\ensuremath{\delta}}
+\newunicodechar{σ}{\ensuremath{\sigma}}
+\newunicodechar{γ}{\ensuremath{\gamma}}
+\newunicodechar{τ}{\ensuremath{\tau}}
+\newunicodechar{θ}{\ensuremath{\theta}}
+\newunicodechar{β}{\ensuremath{\beta}}
+\newunicodechar{α}{\ensuremath{\alpha}}
+\newunicodechar{ρ}{\ensuremath{\rho}}
+\newunicodechar{Δ}{\ensuremath{\Delta}}
+\newunicodechar{ℓ}{\ensuremath{\ell}}
+\newunicodechar{∈}{\ensuremath{\in}}
+\newunicodechar{≤}{\ensuremath{\le}}
+\newunicodechar{≥}{\ensuremath{\ge}}
+\newunicodechar{−}{\ensuremath{-}}
+\newunicodechar{∎}{\ensuremath{\blacksquare}}
+\newunicodechar{′}{\ensuremath{'}}
+\newtheorem{proposition}{Proposition}
+\newcommand{\draftdate}{October 9, 2026}
+\raggedbottom
+\begin{document}
+\title{Proof of Absence From Vehicle Radar: Claim-Driven Evidence Against Delayed No-Contact Injury Claims}
+\author{Rohit~Joshi%
+\thanks{\ifprivate R. Joshi: affiliation and ORCID to be added. \fi This work received no funding. It is personal research carried out outside employment duties and without employer resources. One component, the liveness test, overlaps a patent held by the author's employer (Section~II); employer intellectual-property clearance is required before publication, and the author may file a patent application on the system described.}}
+\ifprivate\markboth{PRIVATE DRAFT, \draftdate---not for distribution before a patent decision}{Joshi: Proof of Absence From Vehicle Radar}
+\else\markboth{IEEE Transactions on Intelligent Transportation Systems}{Joshi: Proof of Absence From Vehicle Radar}\fi
+\maketitle
+\begin{abstract}
+\input{abstract.tex}
+\end{abstract}
+\begin{IEEEkeywords}
+\input{keywords.tex}
+\end{IEEEkeywords}
+\input{body.tex}
+\input{refs.tex}
+\end{document}
