@@ -2,7 +2,6 @@
 
 Claim-driven, image-free vehicle evidence against delayed no-contact injury claims.
 
-![Status](https://img.shields.io/badge/status-private%20draft-lightgrey) ![Evidence](https://img.shields.io/badge/evidence-simulation%20only-orange) ![Reproduce](../../actions/workflows/reproduce.yml/badge.svg)
 
 ## Status: read this first
 
