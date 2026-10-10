@@ -1,8 +1,5 @@
 # Proof of Absence — reproducibility package (v2.3.1)
 
-> **PRIVATE.** Do not publish or share before the patent decision and employer IP clearance. Keep the GitHub
-> repository **private** until then (a public repository, even briefly, is a public disclosure).
-> The Zenodo and CITATION metadata are deliberately non-descriptive; keep any Zenodo deposit as an unpublished draft.
 
 [![reproduce](../../actions/workflows/reproduce.yml/badge.svg)](../../actions/workflows/reproduce.yml)
 
