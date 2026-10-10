@@ -1,13 +1,15 @@
 Proof of Absence From Vehicle Radar
 Image-free vehicle evidence against delayed no-contact injury claims
+
+
 Rohit Joshi · personal research project · manuscript in preparation (2026)
-Private draft. Do not share or make public before the patent decision and employer IP clearance. All results come from simulation. This is a research concept, not a product.
-Show Image
+Private draft. 
+
 The problem
 A driver crosses a solid line. Weeks later, an injury claim arrives: "I was right behind you and braked hard." There was no crash, so event recorders saved nothing, and dashcam loops are long overwritten. The driver must prove a negative: that no vehicle was there. In 2026, Hong Kong police investigated hundreds of such cases.
+
 The idea
-The car's rear radars already watch that area. So the car keeps evidence of empty space instead of video:
-Record free space. For each angular sector, the car stores how far its radar saw clear road. That is two bytes, no images.
+The car's rear radars already watch that area. So the car keeps evidence of empty space instead of video: Record free space. For each angular sector, the car stores how far its radar saw clear road. That is two bytes, no images.
 Trust only healthy sensors. A blocked, misaligned or silent radar is excluded. Its area counts as unknown, never free.
 Seal the record. Every minute the data is salted, hashed into a Merkle tree, chained and signed. A fingerprint leaves the car every hour.
 Turn the claim into a zone. The claimed lane, distance and time become a zone on the road and a time window.
@@ -50,4 +52,3 @@ Citation · licence
 R. Joshi, "Proof of Absence From Vehicle Radar: Claim-Driven Evidence Against Delayed No-Contact Injury Claims," manuscript in preparation, 2026.
 Licence: code under MIT; data, figures and text under CC BY 4.0.
 Views: personal views; no funding.
-AI use: AI-assisted (Claude, Anthropic); the author is responsible for the content.
