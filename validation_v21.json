@@ -1,0 +1,669 @@
+{
+  "V1_known_answers": [
+    {
+      "case": "empty zone, fabricated",
+      "expected": "REFUTED",
+      "got": "REFUTED",
+      "truth_genuine": false,
+      "truth_empty": true,
+      "pass": true
+    },
+    {
+      "case": "car in zone, genuine",
+      "expected": "SUPPORTED",
+      "got": "SUPPORTED",
+      "truth_genuine": true,
+      "truth_empty": false,
+      "pass": true
+    },
+    {
+      "case": "van directly behind, body inside the zone",
+      "expected": "SUPPORTED",
+      "got": "SUPPORTED",
+      "truth_genuine": false,
+      "truth_empty": false,
+      "pass": true
+    },
+    {
+      "case": "empty zone, rear radar on the zone side blocked (flagged)",
+      "expected": "INCONCLUSIVE",
+      "got": "INCONCLUSIVE",
+      "truth_genuine": false,
+      "truth_empty": true,
+      "pass": true
+    },
+    {
+      "case": "empty zone, rear radar on the far side blocked (flagged)",
+      "expected": "REFUTED",
+      "got": "REFUTED",
+      "truth_genuine": false,
+      "truth_empty": true,
+      "pass": true
+    },
+    {
+      "case": "empty zone, curved road R=300 m",
+      "expected": "REFUTED",
+      "got": "REFUTED",
+      "truth_genuine": false,
+      "truth_empty": true,
+      "pass": true
+    }
+  ],
+  "V2_ideal_sensors": {
+    "scenes": 300,
+    "false_refutations": 0,
+    "false_supports": 0,
+    "empty_scenes": 100,
+    "refuted_equals_visible": 90,
+    "agreement_rate": 0.9,
+    "disagreements": [
+      {
+        "scene": 121,
+        "pal_no_bound": "INCONCLUSIVE",
+        "visible_and_empty": true,
+        "kappa": -0.0033333333333333335,
+        "n_actors": 5
+      },
+      {
+        "scene": 144,
+        "pal_no_bound": "INCONCLUSIVE",
+        "visible_and_empty": true,
+        "kappa": 0.0016666666666666668,
+        "n_actors": 6
+      },
+      {
+        "scene": 145,
+        "pal_no_bound": "INCONCLUSIVE",
+        "visible_and_empty": true,
+        "kappa": 0.0033333333333333335,
+        "n_actors": 7
+      },
+      {
+        "scene": 158,
+        "pal_no_bound": "INCONCLUSIVE",
+        "visible_and_empty": true,
+        "kappa": -0.0033333333333333335,
+        "n_actors": 3
+      },
+      {
+        "scene": 228,
+        "pal_no_bound": "INCONCLUSIVE",
+        "visible_and_empty": true,
+        "kappa": -0.0033333333333333335,
+        "n_actors": 6
+      },
+      {
+        "scene": 232,
+        "pal_no_bound": "INCONCLUSIVE",
+        "visible_and_empty": true,
+        "kappa": 0.0033333333333333335,
+        "n_actors": 4
+      },
+      {
+        "scene": 244,
+        "pal_no_bound": "INCONCLUSIVE",
+        "visible_and_empty": true,
+        "kappa": 0.0033333333333333335,
+        "n_actors": 5
+      },
+      {
+        "scene": 253,
+        "pal_no_bound": "INCONCLUSIVE",
+        "visible_and_empty": true,
+        "kappa": 0.0016666666666666668,
+        "n_actors": 1
+      }
+    ]
+  },
+  "V3_bound_calibration": [
+    {
+      "model": "matched",
+      "class": "car",
+      "range_m": 20.0,
+      "samples": 5,
+      "radars": 1,
+      "bound": 3.785619393456754e-12,
+      "empirical": 0.0,
+      "bound_ge_empirical": true
+    },
+    {
+      "model": "matched",
+      "class": "car",
+      "range_m": 20.0,
+      "samples": 5,
+      "radars": 2,
+      "bound": 4.3184402222095036e-14,
+      "empirical": 0.0,
+      "bound_ge_empirical": true
+    },
+    {
+      "model": "matched",
+      "class": "car",
+      "range_m": 20.0,
+      "samples": 27,
+      "radars": 1,
+      "bound": 1.8393221388960024e-16,
+      "empirical": 0.0,
+      "bound_ge_empirical": true
+    },
+    {
+      "model": "matched",
+      "class": "car",
+      "range_m": 40.0,
+      "samples": 5,
+      "radars": 1,
+      "bound": 1.3236240258423279e-05,
+      "empirical": 0.0,
+      "bound_ge_empirical": true
+    },
+    {
+      "model": "matched",
+      "class": "car",
+      "range_m": 40.0,
+      "samples": 5,
+      "radars": 2,
+      "bound": 1.3014500427764306e-06,
+      "empirical": 0.0,
+      "bound_ge_empirical": true
+    },
+    {
+      "model": "matched",
+      "class": "car",
+      "range_m": 40.0,
+      "samples": 27,
+      "radars": 1,
+      "bound": 6.310024012511991e-08,
+      "empirical": 0.0,
+      "bound_ge_empirical": true
+    },
+    {
+      "model": "matched",
+      "class": "car",
+      "range_m": 60.0,
+      "samples": 5,
+      "radars": 1,
+      "bound": 0.0037566921116101238,
+      "empirical": 0.003895,
+      "bound_ge_empirical": true
+    },
+    {
+      "model": "matched",
+      "class": "car",
+      "range_m": 60.0,
+      "samples": 5,
+      "radars": 2,
+      "bound": 0.0009299035312142644,
+      "empirical": 0.00084,
+      "bound_ge_empirical": true
+    },
+    {
+      "model": "matched",
+      "class": "car",
+      "range_m": 60.0,
+      "samples": 27,
+      "radars": 1,
+      "bound": 0.0001293114633609303,
+      "empirical": 0.000105,
+      "bound_ge_empirical": true
+    },
+    {
+      "model": "matched",
+      "class": "car",
+      "range_m": 80.0,
+      "samples": 5,
+      "radars": 1,
+      "bound": 0.054556623638713796,
+      "empirical": 0.05415,
+      "bound_ge_empirical": true
+    },
+    {
+      "model": "matched",
+      "class": "car",
+      "range_m": 80.0,
+      "samples": 5,
+      "radars": 2,
+      "bound": 0.022819503282586955,
+      "empirical": 0.02258,
+      "bound_ge_empirical": true
+    },
+    {
+      "model": "matched",
+      "class": "car",
+      "range_m": 80.0,
+      "samples": 27,
+      "radars": 1,
+      "bound": 0.006160855233914339,
+      "empirical": 0.00585,
+      "bound_ge_empirical": true
+    },
+    {
+      "model": "matched",
+      "class": "motorcycle",
+      "range_m": 20.0,
+      "samples": 5,
+      "radars": 1,
+      "bound": 1.676899788861212e-06,
+      "empirical": 0.0,
+      "bound_ge_empirical": true
+    },
+    {
+      "model": "matched",
+      "class": "motorcycle",
+      "range_m": 20.0,
+      "samples": 5,
+      "radars": 2,
+      "bound": 1.2057698256248686e-07,
+      "empirical": 0.0,
+      "bound_ge_empirical": true
+    },
+    {
+      "model": "matched",
+      "class": "motorcycle",
+      "range_m": 20.0,
+      "samples": 27,
+      "radars": 1,
+      "bound": 3.8832539781301005e-09,
+      "empirical": 0.0,
+      "bound_ge_empirical": true
+    },
+    {
+      "model": "matched",
+      "class": "motorcycle",
+      "range_m": 40.0,
+      "samples": 5,
+      "radars": 1,
+      "bound": 0.020777287656410175,
+      "empirical": 0.02082,
+      "bound_ge_empirical": true
+    },
+    {
+      "model": "matched",
+      "class": "motorcycle",
+      "range_m": 40.0,
+      "samples": 5,
+      "radars": 2,
+      "bound": 0.00711066884598001,
+      "empirical": 0.00689,
+      "bound_ge_empirical": true
+    },
+    {
+      "model": "matched",
+      "class": "motorcycle",
+      "range_m": 40.0,
+      "samples": 27,
+      "radars": 1,
+      "bound": 0.001478812357420075,
+      "empirical": 0.00152,
+      "bound_ge_empirical": true
+    },
+    {
+      "model": "matched",
+      "class": "motorcycle",
+      "range_m": 60.0,
+      "samples": 5,
+      "radars": 1,
+      "bound": 0.2923869247875731,
+      "empirical": 0.2934,
+      "bound_ge_empirical": true
+    },
+    {
+      "model": "matched",
+      "class": "motorcycle",
+      "range_m": 60.0,
+      "samples": 5,
+      "radars": 2,
+      "bound": 0.18380964689773274,
+      "empirical": 0.184105,
+      "bound_ge_empirical": true
+    },
+    {
+      "model": "matched",
+      "class": "motorcycle",
+      "range_m": 60.0,
+      "samples": 27,
+      "radars": 1,
+      "bound": 0.08569107621509552,
+      "empirical": 0.08604,
+      "bound_ge_empirical": true
+    },
+    {
+      "model": "matched",
+      "class": "motorcycle",
+      "range_m": 80.0,
+      "samples": 5,
+      "radars": 1,
+      "bound": 0.6863092579814227,
+      "empirical": 0.686485,
+      "bound_ge_empirical": true
+    },
+    {
+      "model": "matched",
+      "class": "motorcycle",
+      "range_m": 80.0,
+      "samples": 5,
+      "radars": 2,
+      "bound": 0.5687339320545077,
+      "empirical": 0.56897,
+      "bound_ge_empirical": true
+    },
+    {
+      "model": "matched",
+      "class": "motorcycle",
+      "range_m": 80.0,
+      "samples": 27,
+      "radars": 1,
+      "bound": 0.40009785935838393,
+      "empirical": 0.399705,
+      "bound_ge_empirical": true
+    },
+    {
+      "model": "mismatched: RCS -3 dB, persistent fade 6 dB",
+      "class": "car",
+      "range_m": 20.0,
+      "samples": 5,
+      "radars": 1,
+      "bound": 3.785619393456754e-12,
+      "empirical": 5e-06,
+      "bound_ge_empirical": true
+    },
+    {
+      "model": "mismatched: RCS -3 dB, persistent fade 6 dB",
+      "class": "car",
+      "range_m": 20.0,
+      "samples": 5,
+      "radars": 2,
+      "bound": 4.3184402222095036e-14,
+      "empirical": 0.0,
+      "bound_ge_empirical": true
+    },
+    {
+      "model": "mismatched: RCS -3 dB, persistent fade 6 dB",
+      "class": "car",
+      "range_m": 20.0,
+      "samples": 27,
+      "radars": 1,
+      "bound": 1.8393221388960024e-16,
+      "empirical": 5e-06,
+      "bound_ge_empirical": true
+    },
+    {
+      "model": "mismatched: RCS -3 dB, persistent fade 6 dB",
+      "class": "car",
+      "range_m": 40.0,
+      "samples": 5,
+      "radars": 1,
+      "bound": 1.3236240258423279e-05,
+      "empirical": 0.00528,
+      "bound_ge_empirical": false
+    },
+    {
+      "model": "mismatched: RCS -3 dB, persistent fade 6 dB",
+      "class": "car",
+      "range_m": 40.0,
+      "samples": 5,
+      "radars": 2,
+      "bound": 1.3014500427764306e-06,
+      "empirical": 0.002285,
+      "bound_ge_empirical": false
+    },
+    {
+      "model": "mismatched: RCS -3 dB, persistent fade 6 dB",
+      "class": "car",
+      "range_m": 40.0,
+      "samples": 27,
+      "radars": 1,
+      "bound": 6.310024012511991e-08,
+      "empirical": 0.00066,
+      "bound_ge_empirical": false
+    },
+    {
+      "model": "mismatched: RCS -3 dB, persistent fade 6 dB",
+      "class": "car",
+      "range_m": 60.0,
+      "samples": 5,
+      "radars": 1,
+      "bound": 0.0037566921116101238,
+      "empirical": 0.07148,
+      "bound_ge_empirical": false
+    },
+    {
+      "model": "mismatched: RCS -3 dB, persistent fade 6 dB",
+      "class": "car",
+      "range_m": 60.0,
+      "samples": 5,
+      "radars": 2,
+      "bound": 0.0009299035312142644,
+      "empirical": 0.04147,
+      "bound_ge_empirical": false
+    },
+    {
+      "model": "mismatched: RCS -3 dB, persistent fade 6 dB",
+      "class": "car",
+      "range_m": 60.0,
+      "samples": 27,
+      "radars": 1,
+      "bound": 0.0001293114633609303,
+      "empirical": 0.018545,
+      "bound_ge_empirical": false
+    },
+    {
+      "model": "mismatched: RCS -3 dB, persistent fade 6 dB",
+      "class": "car",
+      "range_m": 80.0,
+      "samples": 5,
+      "radars": 1,
+      "bound": 0.054556623638713796,
+      "empirical": 0.23925,
+      "bound_ge_empirical": false
+    },
+    {
+      "model": "mismatched: RCS -3 dB, persistent fade 6 dB",
+      "class": "car",
+      "range_m": 80.0,
+      "samples": 5,
+      "radars": 2,
+      "bound": 0.022819503282586955,
+      "empirical": 0.165925,
+      "bound_ge_empirical": false
+    },
+    {
+      "model": "mismatched: RCS -3 dB, persistent fade 6 dB",
+      "class": "car",
+      "range_m": 80.0,
+      "samples": 27,
+      "radars": 1,
+      "bound": 0.006160855233914339,
+      "empirical": 0.09915,
+      "bound_ge_empirical": false
+    },
+    {
+      "model": "mismatched: RCS -3 dB, persistent fade 6 dB",
+      "class": "motorcycle",
+      "range_m": 20.0,
+      "samples": 5,
+      "radars": 1,
+      "bound": 1.676899788861212e-06,
+      "empirical": 0.002045,
+      "bound_ge_empirical": false
+    },
+    {
+      "model": "mismatched: RCS -3 dB, persistent fade 6 dB",
+      "class": "motorcycle",
+      "range_m": 20.0,
+      "samples": 5,
+      "radars": 2,
+      "bound": 1.2057698256248686e-07,
+      "empirical": 0.00077,
+      "bound_ge_empirical": false
+    },
+    {
+      "model": "mismatched: RCS -3 dB, persistent fade 6 dB",
+      "class": "motorcycle",
+      "range_m": 20.0,
+      "samples": 27,
+      "radars": 1,
+      "bound": 3.8832539781301005e-09,
+      "empirical": 0.000195,
+      "bound_ge_empirical": false
+    },
+    {
+      "model": "mismatched: RCS -3 dB, persistent fade 6 dB",
+      "class": "motorcycle",
+      "range_m": 40.0,
+      "samples": 5,
+      "radars": 1,
+      "bound": 0.020777287656410175,
+      "empirical": 0.15343,
+      "bound_ge_empirical": false
+    },
+    {
+      "model": "mismatched: RCS -3 dB, persistent fade 6 dB",
+      "class": "motorcycle",
+      "range_m": 40.0,
+      "samples": 5,
+      "radars": 2,
+      "bound": 0.00711066884598001,
+      "empirical": 0.10016,
+      "bound_ge_empirical": false
+    },
+    {
+      "model": "mismatched: RCS -3 dB, persistent fade 6 dB",
+      "class": "motorcycle",
+      "range_m": 40.0,
+      "samples": 27,
+      "radars": 1,
+      "bound": 0.001478812357420075,
+      "empirical": 0.05369,
+      "bound_ge_empirical": false
+    },
+    {
+      "model": "mismatched: RCS -3 dB, persistent fade 6 dB",
+      "class": "motorcycle",
+      "range_m": 60.0,
+      "samples": 5,
+      "radars": 1,
+      "bound": 0.2923869247875731,
+      "empirical": 0.521125,
+      "bound_ge_empirical": false
+    },
+    {
+      "model": "mismatched: RCS -3 dB, persistent fade 6 dB",
+      "class": "motorcycle",
+      "range_m": 60.0,
+      "samples": 5,
+      "radars": 2,
+      "bound": 0.18380964689773274,
+      "empirical": 0.426945,
+      "bound_ge_empirical": false
+    },
+    {
+      "model": "mismatched: RCS -3 dB, persistent fade 6 dB",
+      "class": "motorcycle",
+      "range_m": 60.0,
+      "samples": 27,
+      "radars": 1,
+      "bound": 0.08569107621509552,
+      "empirical": 0.308565,
+      "bound_ge_empirical": false
+    },
+    {
+      "model": "mismatched: RCS -3 dB, persistent fade 6 dB",
+      "class": "motorcycle",
+      "range_m": 80.0,
+      "samples": 5,
+      "radars": 1,
+      "bound": 0.6863092579814227,
+      "empirical": 0.789835,
+      "bound_ge_empirical": true
+    },
+    {
+      "model": "mismatched: RCS -3 dB, persistent fade 6 dB",
+      "class": "motorcycle",
+      "range_m": 80.0,
+      "samples": 5,
+      "radars": 2,
+      "bound": 0.5687339320545077,
+      "empirical": 0.721195,
+      "bound_ge_empirical": false
+    },
+    {
+      "model": "mismatched: RCS -3 dB, persistent fade 6 dB",
+      "class": "motorcycle",
+      "range_m": 80.0,
+      "samples": 27,
+      "radars": 1,
+      "bound": 0.40009785935838393,
+      "empirical": 0.61091,
+      "bound_ge_empirical": false
+    }
+  ],
+  "V4_baseline_independence": {
+    "scenes": 40,
+    "identical": 40
+  },
+  "V5_geometry_roundtrip_max_err_m": 1.3855583347321954e-13,
+  "params_simulator": {
+    "snr0_db": -7.0,
+    "pd_slope_db": 1.5,
+    "fade_persist_sigma_db": 4.0,
+    "fade_sample_sigma_db": 3.0,
+    "weather_loss_db": {
+      "clear": 0.0,
+      "rain": 2.5,
+      "fog": 1.0
+    },
+    "ghost_rate": 0.03,
+    "ghost_range": [
+      5.0,
+      40.0
+    ],
+    "rcs_offset_db": 0.0,
+    "p_blocked": 0.05,
+    "blocked_recall": 0.95,
+    "p_misalign": 0.05,
+    "misalign_range_deg": [
+      4.0,
+      10.0
+    ],
+    "calib_noise_deg": 0.5,
+    "clock_sigma_s": 0.1,
+    "pose_noise_l_m": 0.1,
+    "pose_noise_psi_deg": 0.3,
+    "violation_recall": 0.95,
+    "traffic_max": 6,
+    "ego_speed_range": [
+      13.9,
+      22.2
+    ],
+    "weather_probs": [
+      0.6,
+      0.3,
+      0.1
+    ],
+    "genuine_gap_mode": "uniform"
+  },
+  "params_method": {
+    "nominal": {
+      "snr0_db": -7.0,
+      "pd_slope_db": 1.5,
+      "fade_persist_sigma_db": 4.0,
+      "fade_sample_sigma_db": 3.0,
+      "weather_loss_db": {
+        "clear": 0.0,
+        "rain": 2.5,
+        "fog": 1.0
+      }
+    },
+    "eps": 0.001,
+    "calib_limit_deg": 2.0,
+    "clock_bound_s": 0.3,
+    "base_stream": {
+      "res_deg": 2.5,
+      "rate_hz": 2.0
+    },
+    "enriched_stream": {
+      "res_deg": 1.0,
+      "rate_hz": 10.0
+    }
+  }
+}
